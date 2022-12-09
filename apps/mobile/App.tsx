@@ -4,6 +4,7 @@ import { MyButton } from "@my-workspace/my-ui";
 
 import { ApplicationProvider, Text } from "@ui-kitten/components";
 import * as eva from "@eva-design/eva";
+import LottieViewComponent from "./screens/LottieViewComponent.native";
 
 const App = () => {
   return (
@@ -11,13 +12,13 @@ const App = () => {
       <MyButton
         bgColor="black"
         isDisabled
-        onPress={() => { }}
+        onPress={() => {}}
         text="Hello Test"
         textColor="white"
       />
-      <Text>
-        hello
-      </Text>
+      <title></title>
+      <LottieViewComponent></LottieViewComponent>
+      <Text>hello</Text>
     </ApplicationProvider>
   );
 };

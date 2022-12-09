@@ -18,14 +18,12 @@ export const MyButton = ({
   isDisabled,
 }: MyButtonProps) => {
   const [simpltxt, setSimpltxt] = React.useState('');
- 
 
   return (
     <>
       <Button status="danger" onPress={onPress}>
-        Button
+        Use Code attack50
       </Button>
-    
     </>
   );
 };
