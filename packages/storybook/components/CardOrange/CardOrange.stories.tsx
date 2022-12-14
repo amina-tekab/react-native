@@ -6,11 +6,11 @@ const IITCardMeta: ComponentMeta<typeof IITCard> = {
   title: 'Card Orange',
   component: IITCard,
   argTypes: {
-    // // onButtonPress: { action: "pressed the button" },
+    // onButtonPress: { action: "pressed the button" },
     // colorButton: { control: { type: "color" } },
   },
   args: {
-    title: <title></title>,
+    title: 'Code',
     button: 'Use Code attack50',
     description: ' All salad and pasta',
   },

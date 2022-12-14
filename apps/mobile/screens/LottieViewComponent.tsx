@@ -1,13 +1,22 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Button, StyleSheet, View } from "react-native";
 import LottieView from "lottie-react-native";
 
 export default function LottieViewComponent() {
+  const [count, setCount] = useState(0);
   const animation = useRef(null);
   useEffect(() => {
     // You can control the ref programmatically, rather than using autoPlay
     // animation.current?.play();
   }, []);
+
+  useEffect(() => {
+    // You can control the ref programmatically, rather than using autoPlay
+    // animation.current?.play();
+    if (count === 3) {
+      console.log("button disabled", count);
+    }
+  }, [count]);
 
   return (
     <View style={styles.animationContainer}>

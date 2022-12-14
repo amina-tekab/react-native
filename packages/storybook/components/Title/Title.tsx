@@ -1,17 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 type IITTITLEProps = {
-  Title: string;
+  title: string;
 };
 
 export const IITTitle: React.FC<IITTITLEProps> = (props) => {
-  const { Title } = props;
+  const { title } = props;
 
   return (
     <View>
       <Text style={styles.title}>
-        {' '}
-        <strong>{Title}</strong>
+        <strong>{title}</strong>
       </Text>
     </View>
   );
