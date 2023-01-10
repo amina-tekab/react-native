@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react-native';
 import CardNavigation from './CardNavigation';
 import { AntDesign, Octicons, Entypo, Ionicons } from '@expo/vector-icons';
 import { Button, Text, View, Image } from 'react-native';
-const CardFoodMeta: ComponentMeta<typeof CardNavigation> = {
+const CardNavigationMeta: ComponentMeta<typeof CardNavigation> = {
   title: 'CardNavigation ',
   component: CardNavigation,
   argTypes: {},
@@ -30,7 +30,7 @@ const CardFoodMeta: ComponentMeta<typeof CardNavigation> = {
     ),
   },
 };
-export default CardFoodMeta;
+export default CardNavigationMeta;
 
 type CardNavigationStory = ComponentStory<typeof CardNavigation>;
 export const Basic: CardNavigationStory = (args) => <CardNavigation {...args} />;

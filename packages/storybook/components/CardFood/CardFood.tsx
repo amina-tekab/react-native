@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import React from 'react';
 
 type CardFoodProps = {
@@ -7,6 +7,7 @@ type CardFoodProps = {
   description?: React.ReactNode;
   background?: string;
   borderRadius?: number;
+  imag?: string;
   image?: React.ReactNode;
   width: number;
   height: number;
@@ -19,6 +20,7 @@ type CardFoodProps = {
   shadowOpacity?: number;
   shadowRadius?: number;
   elevation?: number;
+  source: string;
 };
 
 const CardFood: React.FC<CardFoodProps> = (props) => {
@@ -33,6 +35,7 @@ const CardFood: React.FC<CardFoodProps> = (props) => {
     width,
     height,
     image,
+    source,
     shadowColor,
     shadowOpacity,
     shadowRadius,
@@ -54,14 +57,14 @@ const CardFood: React.FC<CardFoodProps> = (props) => {
         elevation: elevation,
       }}
     >
-      {image}
-      {title}
-      {description}
-      {price}
+      <View>{image}</View>
+      <View>
+        {title}
+        {description}
+        {price}
+      </View>
     </View>
   );
 };
 
 export default CardFood;
-
-const styles = StyleSheet.create({});

@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import React from 'react';
+import CardPromotionMeta from './CardPromotion.stories';
 
-type CardFoodProps = {
+type CardPromotionProps = {
   title: React.ReactNode;
   titre?: React.ReactNode;
   description?: React.ReactNode;
@@ -16,7 +17,7 @@ type CardFoodProps = {
   borderColor: string;
 };
 
-const CardFood: React.FC<CardFoodProps> = (props) => {
+const CardPromotion: React.FC<CardPromotionProps> = (props) => {
   const {
     title,
     border,
@@ -50,6 +51,6 @@ const CardFood: React.FC<CardFoodProps> = (props) => {
   );
 };
 
-export default CardFood;
+export default CardPromotion;
 
 const styles = StyleSheet.create({});

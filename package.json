@@ -15,5 +15,8 @@
     "packages/*"
   ],
   "version": "1.0.0",
-  "name": "myreactstorybook"
+  "name": "myreactstorybook",
+  "dependencies": {
+    "@react-navigation/stack": "^6.3.10"
+  }
 }

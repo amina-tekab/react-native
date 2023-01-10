@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react-native';
 
 import CardPromotion from './CardPromotion';
 import { Button, Text, View, Image, ImageBackground } from 'react-native';
-const CardFoodMeta: ComponentMeta<typeof CardPromotion> = {
+const CardPromotionMeta: ComponentMeta<typeof CardPromotion> = {
   title: 'CardPromotion ',
   component: CardPromotion,
   argTypes: {},
@@ -74,7 +74,7 @@ const CardFoodMeta: ComponentMeta<typeof CardPromotion> = {
     ),
   },
 };
-export default CardFoodMeta;
+export default CardPromotionMeta;
 
 type CardPromotionStory = ComponentStory<typeof CardPromotion>;
 export const Basic: CardPromotionStory = (args) => <CardPromotion {...args} />;
@@ -135,8 +135,10 @@ CardType2.args = {
   ),
 
   image: (
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfdjhuDv0WwyCuFTL3XOHgwRl2Fsz_jxEoX-hNWJQ6GS2a0dBafgI-vhszhJldVXj9CB0&usqp=CAU"
+    <Image
+      source={{
+        uri: 'https://s3-alpha-sig.figma.com/img/a21b/c7fe/63519debe5a3c52d0446e733fac30a0a?Expires=1674432000&Signature=cPMpGZ9H-OWFlgicgi69C-OzctdjhCAIIU6kBiK2Slk5CverLSC3dDa4WwmqW2DMNChaoAXIr8hiL4hBfE-7T9LSY86rV23PZZV5wPcYnWWRNoTSkf62848NyxAAP2tpSF5QeDtngEESZ-lwb5DvxIujgTTt6aGt6GK790dxrjzejU~d2sO0ECsg23fBlFzhWRXI0~IZWfypvP1TmtZGgcwGoFvVZhi3ZCDEMhgxB~8PSu-w7JodVoCMdIKxviSim8MwhHUrU7CiZAeWLFPFFyFiwsUezQguS-C-Jk5c5de7CjcAWTFQ3JEf4ImM1-CNYuF5bOjc571qCU~SgHjBhg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      }}
       style={{
         width: 116,
         height: 116,
@@ -144,7 +146,7 @@ CardType2.args = {
         marginLeft: 20,
         marginTop: -50,
       }}
-    ></img>
+    ></Image>
   ),
   imageBackground: (
     <View style={{}}>
@@ -166,7 +168,7 @@ CardType3.args = {
   // description: <Text style={{ color: 'black' }}> test </Text>,
   // background: 'white',
   imageBackground: (
-    <View style={{}}>
+    <View>
       <ImageBackground imageStyle={{ borderRadius: 25 }} source={{}}></ImageBackground>
     </View>
   ),
