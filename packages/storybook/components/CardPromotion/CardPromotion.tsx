@@ -44,9 +44,11 @@ const CardPromotion: React.FC<CardPromotionProps> = (props) => {
       }}
     >
       <View style={{ borderRadius: 20 }}>{imageBackground}</View>
-      {title} {image}
+      {title ? title : null} 
+      {image ? image : null} 
+
       <View style={{ marginTop: -60 }}>{description}</View>
-      {titre}
+      {titre ? titre : null}
     </View>
   );
 };
